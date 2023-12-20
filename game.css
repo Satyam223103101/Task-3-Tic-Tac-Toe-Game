@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #604d87;
+    padding-top: 0.5px;
+}
+
+.title {
+    color: rgb(14, 10, 10);
+    text-align: center;
+    font-size: 30px;
+}
+
+.game-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-settings button.game-mode-btn {
+    padding: 20px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 10px 8px;
+    background-color: white; 
+    color: rgb(14, 8, 8);
+    border: 2px solid black;
+}
+
+.game-settings button.game-mode-btn.selected {
+    background-color: white; 
+}
+
+.game-settings button.game-mode-btn:hover {
+    background-color:#672318;
+    color:red;
+    border: 3px solid black ;
+}
+
+.game-settings button.game-mode-btn.selected:hover {
+    background-color: #672318;
+    color: red;
+    border: 3px solid black ;
+}
+
+.display {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    grid-template-rows: 35% 35% 35%;
+    max-width: 45%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tile {
+    border: 3px solid black;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: #0e00d2;
+}
+
+.playerO {
+    color: #55be00;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.controls #reset {
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 23px;
+    margin-left: 1em;
+    cursor: pointer;
+    background-color:rgb(94, 87, 101);
+}
+
+
+.controls #reset:hover {
+    background-color: #00933b;
+    color: white;
+}
